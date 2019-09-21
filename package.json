@@ -21,7 +21,8 @@
     "lint": "xo",
     "build": "bili",
     "example": "poi -s --config example/poi.config.js",
-    "example:build": "poi --prod --config example/poi.config.js"
+    "example:build": "poi --prod --config example/poi.config.js",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {},
   "devDependencies": {
