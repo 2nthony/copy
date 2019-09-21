@@ -1,0 +1,66 @@
+{
+  "name": "@evillt/copy",
+  "description": "A super tiny browser library that copy stuff into clipboard from your browser(<400B Gzipped)",
+  "version": "0.0.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "evillt/copy"
+  },
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "author": "evillt <ijoec123@gmail.com> (https://github.com/evillt)",
+  "main": "dist/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "lint": "xo",
+    "build": "bili",
+    "example": "poi -s --config example/poi.config.js",
+    "example:build": "poi --prod --config example/poi.config.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bili": "^4.8.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-rem": "^4.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
+    "poi": "^12.7.2",
+    "prettier": "^1.18.2",
+    "saika": "^2.9.0",
+    "xo": "^0.24.0"
+  },
+  "xo": {
+    "extends": [
+      "rem",
+      "plugin:prettier/recommended"
+    ],
+    "envs": [
+      "browser"
+    ],
+    "rules": {
+      "unicorn/prefer-node-append": "0"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "xo --fix",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
