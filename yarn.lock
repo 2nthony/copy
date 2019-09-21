@@ -772,6 +772,16 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@evillt/copy@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@evillt/copy/-/copy-1.0.2.tgz#06605e397810340233a67b0bceb918ef922e455c"
+  integrity sha512-rFxlkQwdtWhSIhq/o2fEUM1D6/l93E+L3Nsq9HC39qUq8qfS0g6XdSMBrAe+oxJq/PUWcHZKEwnN34s1WEvd6w==
+
+"@evillt/toast@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@evillt/toast/-/toast-1.1.3.tgz#ee16f6437a82205c973c846b1c8b6b476b20b164"
+  integrity sha512-gmUKJIjT03x5on5KwFciKA7iyFewwpAPee5PmpcmUVPtOTwPftX9FahsLkGVfrJKYPuSB+0mew6q3YyVL3OzEw==
+
 "@intervolga/optimize-cssnano-plugin@^1.0.6":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@intervolga/optimize-cssnano-plugin/-/optimize-cssnano-plugin-1.0.6.tgz#be7c7846128b88f6a9b1d1261a0ad06eb5c0fdf8"
@@ -848,6 +858,11 @@
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@poi/pnp-webpack-plugin/-/pnp-webpack-plugin-0.0.2.tgz#4633d4445637a2ed3b3da7f831ea7ee38587e6d7"
   integrity sha512-5yqBjV6yZzrJBYVG6ASAbhRhAQMjEu1nYDPJFbpPDcfNxEvsO+QwIxFq3ABQwH0iq59nI62v8VtxEc/z+jDFOg==
+
+"@saika/github-corner@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@saika/github-corner/-/github-corner-0.1.1.tgz#7d366f91d86298457cd9ee8d4fea0a832711305d"
+  integrity sha512-/rf4E1+w37wtTNSOFXE4QVRmCQiu67VaIhCDWgK4YGN4gHL5f3Ggi+LNhfnY1H7v2TREnMuQUzyB10gU3kClaA==
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
@@ -7823,11 +7838,13 @@ safe-regex@^2.0.1:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-saika@^2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/saika/-/saika-2.9.0.tgz#9cd464e2cfb23d1ec711089b8bd70117e4d73644"
-  integrity sha512-Uic4eDO4EHIEUbPCH92rX1AOxTg2J/R+Srjc95mdXpAQmZYHbRkGHqx5uILDBOQ7AT+lRVQ6fDXRhQzkWjF/+A==
+saika@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/saika/-/saika-2.10.0.tgz#4ad9369dbcbbb94a286a2de93d9e5c1b93bd5af6"
+  integrity sha512-uHkp1arzTKnV3PSkT/MA2Un96SydqMdSVmhIecG6zaxCl1Q2UiyQvHZyTin4f99SWkFPsr782YejVTX5DbZWAg==
   dependencies:
+    "@evillt/copy" "^1.0.2"
+    "@evillt/toast" "^1.1.3"
     jump.js "^1.0.2"
     loadjs "^3.6.1"
     medium-zoom "^1.0.4"
