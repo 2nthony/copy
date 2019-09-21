@@ -11,8 +11,8 @@
     "url": "evillt/copy"
   },
   "files": [
-    "dist",
-    "*.d.ts"
+    "dist/index.js",
+    "src/index.d.ts"
   ],
   "author": "evillt <ijoec123@gmail.com> (https://github.com/evillt)",
   "main": "dist/index.js",
