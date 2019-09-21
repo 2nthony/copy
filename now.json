@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "alias": ["copy.evila.me", "copy"],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "example/dist"
+      }
+    }
+  ],
+  "github": {
+    "silent": true
+  }
+}
