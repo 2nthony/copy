@@ -10,10 +10,16 @@
 
 Please consider starring the project to show your ❤️ and support.
 
-## Install
+## Usage
 
 ```bash
 yarn add @evillt/copy
+```
+
+```js
+import copy from '@evillt/copy'
+
+copy('text')
 ```
 
 ## Documentation
