@@ -4,9 +4,7 @@ A super tiny browser library that copy stuff into clipboard from your browser(<4
 
 ## Install
 
-```bash
-yarn add @evillt/copy
-```
+<Snippet text="yarn add @evillt/copy" />
 
 ## Usage
 
