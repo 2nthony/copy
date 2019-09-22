@@ -1,8 +1,9 @@
-function copy(text = '', options = {}) {
+function copy(text, options = {}) {
+  if (!text) return
+
   const mark = document.createElement('textarea')
   mark.value = text
   mark.style.all = 'unset'
-  mark.style.width = '1px'
   mark.style.height = '1px'
   mark.style.position = 'fixed'
   mark.style.top = '0'
@@ -19,9 +20,7 @@ function copy(text = '', options = {}) {
 
   const copySuccessful = document.execCommand('copy')
 
-  if (mark) {
-    document.body.removeChild(mark)
-  }
+  document.body.removeChild(mark)
 
   return copySuccessful
 }
